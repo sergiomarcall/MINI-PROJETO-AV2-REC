@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banca de Revista</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 5px 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .revista {
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .revista span {
+      font-weight: bold;
+    }
+    .revista button {
+      background-color: red;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Banca de Revista</h1>
+    <form action="#" method="POST">
+      <input type="text" name="titulo" placeholder="Título da Revista" required />
+      <input type="text" name="genero" placeholder="Gênero" required />
+      <input type="number" name="preco" placeholder="Preço (R$)" required />
+      <button type="submit">Adicionar Revista</button>
+    </form>
+
+    <!-- Seção para exibir as revistas (simulada) -->
+    <div class="revista">
+      <span>Revista Exemplo - Gênero: Diversão - R$ 9,99</span>
+      <button>Remover</button>
+    </div>
+    <div class="revista">
+      <span>Revista Exemplo 2 - Gênero: Tecnologia - R$ 15,99</span>
+      <button>Remover</button>
+    </div>
+  </div>
+</body>
+</html>
